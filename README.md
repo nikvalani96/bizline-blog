@@ -20,7 +20,6 @@ The theme is designed with a strong focus on readability, performance, and ease 
 * Compatible with the latest WordPress versions
 * Translation ready
 
-
 <h3>📦 Theme Structure</h3>
 
 ```
