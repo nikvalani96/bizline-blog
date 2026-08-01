@@ -1,0 +1,310 @@
+{
+	"customTemplates": [
+		{
+			"name": "front",
+			"postTypes": [
+				"page"
+			],
+			"title": "Front Page"
+		}
+	],
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"palette": [
+				{
+					"color": "#e61f57",
+					"name": "Spanish Crimson",
+					"slug": "custom-spanish-crimson"
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "1300px",
+			"wideSize": "1300px"
+		},
+		"spacing": {
+			"customSpacingSize": true,
+			"spacingScale": {
+				"theme": {
+					"increment": 1.5,
+					"mediumStep": 1.5,
+					"operator": "*",
+					"steps": 7,
+					"unit": "rem"
+				}
+			},
+			"spacingSizes": [
+				{
+					"name": "Step 1 - Fixed",
+					"size": "0.25rem",
+					"slug": "step-1"
+				},
+				{
+					"name": "Step 2 - Fixed",
+					"size": "0.5rem",
+					"slug": "step-2"
+				},
+				{
+					"name": "2X-Small",
+					"size": "0.44rem",
+					"slug": "20"
+				},
+				{
+					"name": "X-Small",
+					"size": "0.67rem",
+					"slug": "30"
+				},
+				{
+					"name": "Small",
+					"size": "1rem",
+					"slug": "40"
+				},
+				{
+					"name": "Medium",
+					"size": "1.5rem",
+					"slug": "50"
+				},
+				{
+					"name": "Large",
+					"size": "2.25rem",
+					"slug": "60"
+				},
+				{
+					"name": "X-Large",
+					"size": "3.38rem",
+					"slug": "70"
+				},
+				{
+					"name": "2X-Large",
+					"size": "5.06rem",
+					"slug": "80"
+				}
+			],
+			"units": [
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw",
+				"%"
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "\"Be Vietnam Pro\"",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/be-vietnam-pro/be-vietnam-pro-400-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Be Vietnam Pro\"",
+							"fontStyle": "normal",
+							"fontWeight": "300",
+							"src": [
+								"file:./assets/fonts/be-vietnam-pro/be-vietnam-pro-300-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Be Vietnam Pro\"",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/be-vietnam-pro/be-vietnam-pro-500-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Be Vietnam Pro\"",
+							"fontStyle": "normal",
+							"fontWeight": "600",
+							"src": [
+								"file:./assets/fonts/be-vietnam-pro/be-vietnam-pro-600-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Be Vietnam Pro\"",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/be-vietnam-pro/be-vietnam-pro-700-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "\"Be Vietnam Pro\"",
+							"fontStyle": "normal",
+							"fontWeight": "800",
+							"src": [
+								"file:./assets/fonts/be-vietnam-pro/be-vietnam-pro-800-normal.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Be Vietnam Pro\", sans-serif",
+					"name": "Be Vietnam Pro",
+					"slug": "be-vietnam-pro"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Roboto",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/roboto/roboto-400-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "Roboto",
+							"fontStyle": "normal",
+							"fontWeight": "500",
+							"src": [
+								"file:./assets/fonts/roboto/roboto-500-normal.woff2"
+							]
+						},
+						{
+							"fontFamily": "Roboto",
+							"fontStyle": "normal",
+							"fontWeight": "700",
+							"src": [
+								"file:./assets/fonts/roboto/roboto-700-normal.woff2"
+							]
+						}
+					],
+					"fontFamily": "Roboto, sans-serif",
+					"name": "Roboto",
+					"slug": "roboto"
+				}
+			],
+			"fontSizes": []
+		}
+	},
+	"styles": {
+		"blocks": {
+			"core/paragraph": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--roboto)",
+					"fontSize": "16px"
+				}
+			}
+		},
+		"color": {
+			"text": "var(--wp--preset--color--black)"
+		},
+		"elements": {
+			"button": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--be-vietnam-pro)",
+					"fontSize": "var(--wp--preset--font-size--medium)",
+					"fontStyle": "normal",
+					"fontWeight": "500"
+				}
+			},
+			"caption": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--roboto)",
+					"fontSize": "18px",
+					"fontStyle": "normal",
+					"fontWeight": "400"
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--be-vietnam-pro)",
+					"fontSize": "34px",
+					"fontStyle": "normal",
+					"fontWeight": "700"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--be-vietnam-pro)",
+					"fontSize": "32px",
+					"fontStyle": "normal",
+					"fontWeight": "600"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--be-vietnam-pro)",
+					"fontSize": "30px",
+					"fontStyle": "normal",
+					"fontWeight": "600"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--be-vietnam-pro)",
+					"fontSize": "28px",
+					"fontStyle": "normal",
+					"fontWeight": "500"
+				}
+			},
+			"h5": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--be-vietnam-pro)",
+					"fontSize": "26px",
+					"fontStyle": "normal",
+					"fontWeight": "500"
+				}
+			},
+			"h6": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--be-vietnam-pro)",
+					"fontSize": "24px",
+					"fontStyle": "normal",
+					"fontWeight": "500"
+				}
+			},
+			"heading": {
+				"color": {
+					"text": "var(--wp--preset--color--black)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--be-vietnam-pro)",
+					"fontStyle": "normal",
+					"fontWeight": "700"
+				}
+			},
+			"link": {
+				":hover": {
+					"color": {
+						"text": "#e61f57"
+					}
+				},
+				"color": {
+					"text": "#000000"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--be-vietnam-pro)",
+					"fontSize": "16px",
+					"fontStyle": "normal",
+					"fontWeight": "400"
+				}
+			}
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--roboto)",
+			"fontSize": "16px",
+			"fontStyle": "normal",
+			"fontWeight": "400"
+		}
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header",
+			"title": "Header"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "Footer"
+		}
+	],
+	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.8/theme.json"
+}

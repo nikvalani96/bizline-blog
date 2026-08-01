@@ -1,0 +1,467 @@
+/*
+Theme Name: BizLine Blog
+Theme URI: https://bizlineblog.webizito.com/
+Author: Webizito Themes
+Author URI: https://webizito.com/
+Description: BizLine Blog is a clean, responsive, and highly flexible WordPress block theme built for modern business blogs, personal brands, and corporate publications. With full support for the block editor and full site editing (FSE), it helps organizations share insights, case studies, and news in a clean, professional layout.
+Requires at least: 6.0
+Tested up to: 6.8
+Requires PHP: 7.4
+Version: 1.4
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: bizline-blog
+Tags: blog, news, full-site-editing, grid-layout, two-columns, three-columns, four-columns, right-sidebar, block-patterns, block-styles, custom-background, custom-colors, custom-header, custom-logo, editor-style, featured-images, style-variations, wide-blocks
+*/
+
+
+/* Underline links in content, excerpts, widgets, comments, etc. */
+a {
+    text-decoration: underline;
+}
+
+p {
+	line-height: 1.4;
+}
+
+.header-inner-rows {
+	width: 100%;
+}
+
+.header-inner-rows .wp-block-social-links a {
+	font-size: 22px;
+}
+
+.header-inner-rows .wp-block-search__button {
+	padding: 10px;
+	width: 40px;
+	height: 40px;
+	align-items: center;
+}
+
+.header-inner-rows .wp-block-search__input {
+	border-radius: 30px !important;
+	margin-right: 10px;
+}
+
+.header-inner-rows .wp-block-search__input:focus-visible {
+	outline: none;
+}
+
+.header-menu-wrap li a {
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+
+.header-menu-wrap li a:hover {
+	color: #e61f57 !important;
+}
+
+.header-menu-wrap li.current-menu-item a {
+	color: #e61f57 !important;
+}
+
+.wp-block-search__input {
+	padding-left: 10px;
+}
+
+footer a:hover {
+	color: #e61f57;
+}
+
+footer .wp-block-navigation a:hover {
+	color: #e61f57 !important;
+}
+
+.bz-footer-wrap .wp-block-categories-list {
+	list-style: none;
+	padding-left: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.bz-footer-wrap .wp-block-categories-list li {
+	margin-bottom: 10px;
+	width: 50%;
+}
+
+.bz-footer-wrap .ft-popular-post li {
+	margin-bottom: 25px;
+}
+
+.bz-footer-wrap .ft-popular-post img {
+	border-radius: 3px;
+}
+
+.bz-footer-wrap .ft-popular-post .wp-block-latest-posts__post-date {
+	margin-top: 15px;
+}
+
+.bz-footer-wrap .wp-block-social-links li a {
+	font-size: 24px;
+}
+
+.wp-block-button__link::after {
+	content: "";
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	margin-left: 10px;
+	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path d='m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z' fill='%23fff'/></svg>");
+	background-repeat: no-repeat;
+	background-size: contain;
+	vertical-align: middle;
+}
+
+.wp-block-button__link:hover::after,
+.business-grid-rows .wp-block-post-excerpt__more-link:hover::after {
+	transform: translateX(5px);
+	transition: transform 0.3s ease;
+}
+
+.business-grid-rows .wp-block-post-excerpt__more-link::after {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-left: 10px;
+	background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><path d='m31.71 15.29-10-10-1.42 1.42 8.3 8.29H0v2h28.59l-8.29 8.29 1.41 1.41 10-10a1 1 0 0 0 0-1.41z' fill='%23fff'/></svg>");
+	background-repeat: no-repeat;
+	background-size: contain;
+	vertical-align: middle;
+}
+
+ul.hero-section.wp-block-post-template {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 300px;
+	gap: 1.5rem;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* Grid item default (li) */
+ul.hero-section li {
+	position: relative;
+	overflow: hidden;
+	border-radius: 12px;
+	box-shadow: #e61f5721 0px 5px 5px 0px;
+}
+
+/* First row, center item larger (2x height) */
+ul.hero-section li:nth-child(2) {
+	grid-row: span 2;
+}
+
+/* Featured image fills card */
+ul.hero-section li figure {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+ul.hero-section li figure img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	transition: transform 0.3s ease;
+}
+
+ul.hero-section li:hover figure img {
+	transform: scale(1.05);
+}
+
+/* Overlay (post text wrapper) */
+ul.hero-section .hero-inner-rows {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+	color: #fff;
+	width: 100%;
+	box-sizing: border-box;
+	z-index: 10;
+}
+
+ul.hero-section .wp-block-post-title a {
+	color: #fff;
+	text-decoration: none;
+}
+
+ul.hero-section .wp-block-post-title a:hover {
+	color: #e61f57;
+}
+
+.hero-section .taxonomy-category {
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.cat-label-badge a {
+	font-size: 12px;
+}
+
+.business-grid-rows li.wp-block-post {
+	position: relative;
+	background: #fff;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+	border: 1px solid #e5e7eb;
+	transition: transform 0.3s ease;
+}
+
+.business-grid-rows li.wp-block-post:hover {
+	transform: translateY(-5px);
+}
+
+.business-grid-rows .taxonomy-category {
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	overflow: hidden;
+	z-index: 1;
+	margin-bottom: 0;
+}
+
+.business-grid-rows li a img {
+	object-fit: cover;
+	max-width: 100%;
+	height: 100%;
+	max-height: 250px;
+}
+
+.business-grid-rows .wp-block-post-excerpt__more-text a.wp-block-post-excerpt__more-link {
+	background-color: #e61f57;
+	color: #fff;
+	width: 100%;
+	font-size: 14px;
+	font-weight: 600;
+	text-align: center;
+	padding: 10px 0;
+	border-radius: 3px;
+	transition: .3s all ease;
+	text-decoration: none;
+}
+
+.business-grid-rows .wp-block-post-excerpt__more-text a.wp-block-post-excerpt__more-link:hover {
+	background-color: #000;
+}
+
+.business-section .business-right-cols .wp-block-post-excerpt__more-text {
+	margin-top: 10px;
+}
+
+.business-section .business-right-cols a.wp-block-post-excerpt__more-link {
+	color: #e61f57;
+	border-bottom: 2px solid #e61f57;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.business-section .business-right-cols a.wp-block-post-excerpt__more-link:hover {
+	color: #000;
+	border-bottom: 2px solid #000;
+}
+
+.political-section li a img {
+	object-fit: cover;
+	max-width: 100%;
+	height: 100%;
+	max-height: 200px;
+}
+
+.last-bottom-section ul.hero-section.wp-block-post-template {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+span.page-numbers.current {
+	background: #e61f57;
+	color: #fff;
+	border: 1px solid #e61f57;
+	padding: 8px 10px;
+	transition: .3s all ease;
+}
+
+a.page-numbers {
+	background: transparent;
+	color: #e61f57;
+	border: 1px solid #e61f57;
+	padding: 8px 10px;
+	transition: .3s all ease;
+}
+
+a.page-numbers:hover {
+	background: #e61f57;
+	color: #fff;
+	transition: .3s all ease;
+}
+
+.wp-block-query-pagination a.wp-block-query-pagination-previous,
+.wp-block-query-pagination a.wp-block-query-pagination-next {
+	color: #fff;
+	background: #e61f57;
+	padding: 0.6rem 1rem;
+	border: 1px solid #e61f57;
+}
+
+.wp-block-query-pagination a.wp-block-query-pagination-previous:hover,
+.wp-block-query-pagination a.wp-block-query-pagination-next:hover {
+	background: transparent;
+	color: #e61f57;
+	border: 1px solid #e61f57;
+}
+
+span.page-numbers.dots {
+	color: #e61f57;
+	font-size: 20px;
+}
+
+.sidebar-wrap .wp-block-columns {
+	padding: 20px 20px;
+}
+
+.sidebar-wrap .wp-block-latest-posts__list li {
+	margin-bottom: 25px;
+}
+
+.sidebar-wrap .wp-block-latest-posts__list li img {
+	border-radius: 5px;
+}
+
+.sidebar-wrap .wp-block-latest-posts__list .wp-block-latest-posts__post-date {
+	margin-top: 10px;
+}
+
+.sidebar-wrap ul.wp-block-categories-list {
+	list-style: none;
+	padding-left: 0;
+}
+
+.sidebar-wrap ul.wp-block-categories-list li.cat-item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 15px;
+	border-bottom-style: dashed;
+	border-bottom-color: #a2a2a2;
+	border-bottom-width: 1px;
+}
+
+.sidebar-wrap ul.wp-block-categories-list li.cat-item a {
+	padding-bottom: 10px;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+
+.sidebar-wrap .wp-block-tag-cloud a,
+.sidebar-wrap .taxonomy-post_tag a {
+	padding: 10px;
+	font-size: 14px !important;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	padding: 8px 10px;
+	color: #e61f57;
+	background: #e5124d14;
+	line-height: 1;
+	margin-right: 10px;
+	text-transform: capitalize;
+	word-break: normal;
+}
+
+.sidebar-wrap .wp-block-post-terms .wp-block-post-terms__separator {
+	display: none;
+}
+
+.sidebar-wrap .wp-block-tag-cloud a:hover,
+.sidebar-wrap .taxonomy-post_tag a:hover {
+	background: #e61f57;
+	color: #fff;
+}
+
+.sidebar-wrap .wp-block-social-links a {
+	font-size: 22px;
+}
+
+.hero-blog-sub-content .wp-block-post-author__content {
+	display: flex;
+	align-items: center;
+}
+
+.hero-blog-sub-content .wp-block-post-author__avatar img {
+	width: 36px;
+	height: 36px;
+}
+
+.hero-blog-sub-content .wp-block-post-author__byline {
+	margin-right: 5px;
+	width: auto;
+}
+
+.sidebar-wrap .wp-block-post-author {
+	display: block;
+}
+
+.sidebar-wrap .wp-block-post-author__avatar img {
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.sidebar-wrap .wp-block-post-author__content {
+	margin-top: 30px;
+}
+
+.sidebar-wrap .wp-block-post-author__name {
+	font-size: 22px;
+	font-weight: 500;
+	text-transform: capitalize;
+}
+
+.comment-form #submit {
+	border-radius: 10px;
+	font-size: 18px;
+	padding: 15px 25px;
+	background-color: #e61f57;
+}
+
+.comment-form #submit:hover {
+	background-color: #000;
+}
+
+.comment-form a {
+	color: #e61f57;
+}
+
+.comment-form a:hover {
+	color: #000;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+	ul.hero-section.wp-block-post-template {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	ul.hero-section li:nth-child(2) {
+		grid-row: span 1;
+	}
+}
+
+@media (max-width: 768px) {
+	ul.hero-section.wp-block-post-template {
+		grid-template-columns: 1fr;
+	}
+}
